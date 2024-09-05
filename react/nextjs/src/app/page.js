@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Card, CardBody, Input } from '@nextui-org/react';
+import { Button, Card, CardBody, Image, Input } from '@nextui-org/react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaEye, FaEyeSlash, FaFacebook, FaGoogle, FaInstagram, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
@@ -19,13 +19,20 @@ const Login = () => {
 
   return (
     <div className='bg-slate-50 text-black flex flex-col min-h-screen items-center justify-center p-4'>
-      
+       
       <header className='text-center mb-6'>
+      <Image
+        width={300}
+        alt="NextUI logo"
+        src="/logo.png" 
+        className='mb-6'
+      />
         <p className='text-blue-400 text-2xl'>Hi! Welcome</p>
         <p>Let's get started on your education quest!</p>
       </header>
 
       <Card className='w-full max-w-md p-4 rounded-lg shadow-lg'>
+        
         <CardBody>
           <form>
             <Input
